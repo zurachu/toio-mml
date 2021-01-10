@@ -58,3 +58,16 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# toio-sdk
+Assets/ble-plugin-unity*
+Assets/toio-sdk*
+Assets/WebGLTemplates*
+
+# TextPlayer
+Assets/TextPlayer*
+
+# WebGLSupport
+Assets/WebGLSupport*
+
+# my build destination
+WebGL
