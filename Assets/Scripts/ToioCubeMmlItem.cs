@@ -20,7 +20,7 @@ public class ToioCubeMmlItem : MonoBehaviour
         this.cube = cube;
         UIUtility.TrySetColor(image, color);
         inputField.text = PlayerPrefs.GetString(PlayerPrefsKey);
-        cube.TurnLedOn(ColorIntValue(color.r), ColorIntValue(color.g), ColorIntValue(color.b), 0);
+        ToioLedUtility.TurnLedOn(cube, color, 0);
     }
 
     public void Play()
@@ -42,10 +42,5 @@ public class ToioCubeMmlItem : MonoBehaviour
         {
             toioCubeMmlPlayer.Update();
         }
-    }
-
-    private int ColorIntValue(float value)
-    {
-        return (int)Mathf.Clamp(value * 255, 0, 255);
     }
 }
